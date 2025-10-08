@@ -1,0 +1,15 @@
+# Supabase
+.env
+.env.local
+supabase/.temp/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
