@@ -1,0 +1,206 @@
+{
+  "basic_facts": {
+    "name": "Jake Gorgol",
+    "current_title": "VP, Operations & Product",
+    "current_company": "OutScout",
+    "years_experience": 10,
+    "location": "Austin, TX",
+    "email": "jd.gorgol@gmail.com",
+    "linkedin": "linkedin.com/in/jake-gorgol/"
+  },
+  
+  "experience_profile": {
+    "experience_level": "VP",
+    "sub_function": "product",
+    "primary_function": "R&D",
+    "function_confidence": "high",
+    "secondary_functions": ["operations", "gtm_strategy"],
+    
+    "work_history": [
+      {
+        "title": "VP, Operations & Product",
+        "company": "OutScout",
+        "start_date": "2025",
+        "end_date": null,
+        "duration_months": 12,
+        "is_current": true,
+        "key_achievements": [
+          "Generated $576K pipeline in 90 days with <$2K/mo budget ($180 CPL)",
+          "Built end-to-end hiring scoring systems across B2B/B2C tech verticals",
+          "Integrated CRM, sales, delivery systems tracking $5M+ revenue"
+        ]
+      },
+      {
+        "title": "Director, GTM & Platform Strategy",
+        "company": "OutScout",
+        "start_date": "2021",
+        "end_date": "2024",
+        "duration_months": 36,
+        "is_current": false,
+        "key_achievements": [
+          "Developed internal playbooks and feedback frameworks",
+          "Collaborated with product and AI teams on match logic"
+        ]
+      },
+      {
+        "title": "Senior Manager, Product Strategy & Marketing",
+        "company": "Abercrombie & Fitch",
+        "start_date": "2019",
+        "end_date": "2021",
+        "duration_months": 24,
+        "is_current": false,
+        "key_achievements": [
+          "Owned $225M+ annual category revenue",
+          "Created KPI dashboards for executive teams",
+          "Led 12+ product campaigns/year across NA, EMEA, APAC",
+          "Managed team of 6, collaborated with 16+ partners"
+        ]
+      },
+      {
+        "title": "Senior Merchant, Hollister Apparel",
+        "company": "Abercrombie & Fitch",
+        "start_date": "2014",
+        "end_date": "2019",
+        "duration_months": 60,
+        "is_current": false,
+        "key_achievements": []
+      }
+    ]
+  },
+  
+  "skills_and_capabilities": {
+    "core_skills": [
+      "Operations Strategy",
+      "Product Strategy",
+      "GTM Systems",
+      "Workflow Design",
+      "KPI Dashboards",
+      "Merchandising",
+      "Forecasting",
+      "Campaign Management",
+      "Cross-functional Leadership"
+    ],
+    
+    "domain_expertise": [
+      "Retail Operations",
+      "Ecommerce",
+      "SaaS Platforms",
+      "Hiring/Recruiting Tech",
+      "Marketplace Dynamics"
+    ],
+    
+    "technical_capabilities": [
+      "System Integration (HubSpot, Airtable)",
+      "Scoring/Matching Algorithms",
+      "Performance Metrics & Analytics",
+      "Revenue Operations",
+      "Process Automation"
+    ]
+  },
+  
+  "trajectory_analysis": {
+    "career_trajectory": "CLIMBING",
+    "trajectory_confidence": "high",
+    "evidence": [
+      "Senior Merchant (2014) → Senior Manager (2019) → Director (2021) → VP (2025)",
+      "Consistent promotions every 2-3 years",
+      "Scope expansion: IC → team lead → cross-functional leader → executive"
+    ],
+    
+    "tenure_pattern": "STABLE_BUILDER",
+    "average_tenure_months": 33,
+    "pattern_notes": "5 years at A&F building expertise, 4 years at OutScout scaling startup - prefers depth over job hopping",
+    
+    "work_mode": "BUILDER_OPERATOR",
+    "work_mode_evidence": [
+      "Built systems from scratch (hiring scoring, playbooks, integrations)",
+      "Owns P&L and execution (not just strategy)",
+      "Hands-on with tools (HubSpot, Airtable, custom platforms)"
+    ]
+  },
+  
+  "company_context": {
+    "company_stage_experience": ["Public/Enterprise", "Early Stage SaaS"],
+    "company_stage_comfort": "growth_stage_startup",
+    "evidence": "Thrived at A&F (enterprise scale) then chose early-stage OutScout for 4 years",
+    
+    "industries": ["Retail", "Ecommerce", "SaaS", "HR Tech"],
+    "cross_domain_strength": "Brings retail operational rigor to tech startups"
+  },
+  
+  "leadership_profile": {
+    "has_management_experience": true,
+    "team_size_managed": 6,
+    "leadership_style": "cross_functional_operator",
+    "evidence": [
+      "Managed 6 direct reports",
+      "Collaborated with 16+ cross-functional partners",
+      "Works across product, AI, sales, marketing"
+    ]
+  },
+  
+  "education": {
+    "degree": "B.S. Marketing",
+    "school": "Indiana University – Kelley School of Business",
+    "field": "Marketing",
+    "graduation_year": 2014,
+    "years_since_graduation": 11
+  },
+  
+  "inferred_preferences": {
+    "likely_seeking": "COO or VP Ops roles at Series B-D SaaS companies",
+    "stage_preference": "growth_stage",
+    "stage_confidence": "high",
+    "evidence": "Stayed at OutScout 4 years through growth phases",
+    
+    "function_preference": "operations_product_hybrid",
+    "evidence": "Title progression shows blend of ops + product + GTM",
+    
+    "location_flexibility": "remote_or_austin",
+    "location_evidence": "Moved from OH to TX, works at remote-first company"
+  },
+  
+  "next_logical_moves": {
+    "natural_progressions": [
+      "COO at Series B-D SaaS (30-200 employees)",
+      "VP Operations at high-growth tech company",
+      "Head of Operations & Strategy at marketplace/platform",
+      "Founder/Co-founder (operations-focused)"
+    ],
+    
+    "stretch_but_feasible": [
+      "Chief of Staff to CEO at later-stage startup",
+      "VP Product at operationally-complex company",
+      "General Manager role with P&L ownership"
+    ],
+    
+    "likely_not_interested": [
+      "Pure strategy consulting (wants to build, not advise)",
+      "Large enterprise/corporate (left A&F for startup)",
+      "Pure product role without ops component"
+    ]
+  },
+  
+  "unique_differentiators": {
+    "rare_combinations": [
+      "Retail operations depth + SaaS platform experience",
+      "Hands-on operator + executive leadership",
+      "Revenue ownership + product development",
+      "Traditional retail + AI/tech fluency"
+    ],
+    
+    "quantifiable_impact": [
+      "$225M+ P&L ownership",
+      "$576K pipeline with tiny budget",
+      "$5M+ revenue tracked through systems built",
+      "12+ campaigns/year across 3 regions"
+    ]
+  },
+  
+  "availability_signals": {
+    "months_in_current_role": 12,
+    "likely_availability": "medium",
+    "reasoning": "12 months in VP role - settling in but not too new to consider exceptional opportunities",
+    "red_flags": "None - stable career pattern, no concerning gaps"
+  }
+}
