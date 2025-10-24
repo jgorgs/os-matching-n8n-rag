@@ -1,0 +1,203 @@
+const JOB_ENRICHMENT_PROMPT = `
+You are an expert recruiting analyst. Your job is to extract and structure job requirements from job postings to enable better candidate matching.
+
+Given a job posting, return a comprehensive JSON profile that captures:
+1. Facts (what's explicitly required)
+2. Context (company stage, team, business impact)
+3. Success profile (what "good" actually looks like)
+4. Alternative backgrounds (non-obvious fits)
+
+## INPUT
+Job posting text:
+"""
+{job_posting_text}
+"""
+
+## OUTPUT FORMAT
+Return ONLY valid JSON with this exact structure:
+
+{
+  "basic_info": {
+    "job_title": "Exact title from posting",
+    "company_name": "Company name only",
+    "location": "Location or 'Remote'",
+    "employment_type": "Full-time | Part-time | Contract",
+    "salary_range": {
+      "min": number_or_null,
+      "max": number_or_null,
+      "currency": "USD | other"
+    }
+  },
+  
+  "role_requirements": {
+    "experience_level": "IC | Senior IC | Manager | Director | VP | SVP | C-Level",
+    "min_years_experience": number,
+    "sub_function": "engineering | product | sales | marketing | operations | finance | data | design | customer_success | people",
+    "primary_function": "R&D | Go-to-Market | G&A",
+    
+    "required_skills": ["must-have skill 1", "must-have skill 2"],
+    "preferred_skills": ["nice-to-have skill 1", "nice-to-have skill 2"],
+    "required_experience": ["specific experience type 1", "specific experience type 2"],
+    
+    "technical_requirements": ["tool/system 1", "tool/system 2"],
+    "domain_requirements": ["industry knowledge", "domain expertise"]
+  },
+  
+  "company_context": {
+    "company_stage": "Startup | Early Stage | Growth Stage | Late Stage | Public",
+    "company_size": "estimated employee count or range",
+    "company_description": "brief description of what company does",
+    "annual_revenue": "estimated ARR or revenue if mentioned",
+    "funding_status": "bootstrapped | seed | series A-F | public | etc",
+    "industries": ["industry 1", "industry 2"]
+  },
+  
+  "role_context": {
+    "reports_to": "who this role reports to",
+    "team_size_managed": number_or_null,
+    "cross_functional_scope": ["teams they'll work with"],
+    "
+_impact": "description of business impact",
+    "key_challenges": ["challenge 1", "challenge 2", "challenge 3"],
+    "first_90_days": ["priority 1", "priority 2", "priority 3"]
+  },
+  
+  "work_mode_analysis": {
+    "work_style": "builder_operator | strategic_leader | people_manager | individual_contributor | executive",
+    "work_style_evidence": ["evidence from posting"],
+    "ownership_level": "high | medium | low",
+    "collaboration_intensity": "high | medium | low"
+  },
+  
+  "ideal_candidate_profile": {
+    "trajectory_fit": "CLIMBING | STABLE_EXPERT | PIVOTING | FOUNDER_OPERATOR",
+    "trajectory_reasoning": "why this trajectory fits",
+    
+    "company_background_fit": ["type of companies ideal candidate worked at"],
+    "stage_comfort_required": "startup | growth_stage | enterprise | mixed",
+    
+    "leadership_requirements": {
+      "must_have_managed": boolean,
+      "leadership_style_needed": "hands_on | strategic | cross_functional | player_coach",
+      "team_building_required": boolean
+    }
+  },
+  
+  "success_profile": {
+    "what_success_looks_like": "description of success in this role",
+    "key_outcomes_6_months": ["outcome 1", "outcome 2"],
+    "key_outcomes_12_months": ["outcome 1", "outcome 2"],
+    "must_have_done_before": ["critical past experience 1", "critical past experience 2"]
+  },
+  
+  "alternative_backgrounds": {
+    "non_obvious_fits": [
+      "background type 1 that could work and why",
+      "background type 2 that could work and why"
+    ],
+    "adjacent_roles": ["role 1", "role 2"],
+    "transferable_from": ["industry/domain they could come from"]
+  },
+  
+  "filters_and_dealbreakers": {
+    "location_constraints": "any location requirements",
+    "work_arrangement": "remote | hybrid | onsite | flexible",
+    "visa_sponsorship": boolean_or_null,
+    "must_have_regulatory_experience": boolean,
+    "must_have_specific_company": ["company name if required"] or null,
+    "dealbreakers": ["absolute requirement 1", "absolute requirement 2"]
+  }
+}
+
+## ANALYSIS GUIDELINES
+
+### Experience Level Inference
+- Look for explicit seniority signals: "15+ years", "lead teams of 5+", "VP-level"
+- Manager indicators: "manage team", "build team", "lead PMs"
+- IC indicators: "hands-on", "individual contributor", "senior engineer"
+- Executive indicators: "strategic vision", "board-level", "C-suite", "P&L ownership"
+
+### Company Stage Clues
+- Startup: "founding", "early stage", "seed funded", "0 to 1", "<50 employees"
+- Growth: "Series B-D", "scaling", "100-500 employees", "$10M-$100M revenue"
+- Late Stage: "Series E+", "pre-IPO", "500+ employees", "$100M+ revenue"
+- Public: "publicly traded", "Fortune 500", "established leader"
+
+### Work Mode Analysis
+- BUILDER_OPERATOR: "hands-on", "ship code", "build from scratch", "0 to 1"
+- STRATEGIC_LEADER: "vision", "strategy", "roadmap", "executive stakeholders"
+- PEOPLE_MANAGER: "build team", "mentor", "hire", "develop talent"
+- PLAYER_COACH: "hands-on contributor who also leads", "IC with leadership"
+
+### Success Profile Extraction
+Look for:
+- Explicit outcomes mentioned: "drive $X revenue", "reduce churn by Y%"
+- Timeline indicators: "first 90 days", "year one", "within 6 months"
+- Critical path items: "must establish", "need to build", "responsible for"
+
+### Alternative Backgrounds
+Think about:
+- What adjacent roles could do this? (Consultant → Operator, IC → Manager)
+- What transferable domains? (Finance payments → SaaS payments, Retail ops → Tech ops)
+- What non-obvious combinations? (Engineer + MBA for technical PM role)
+
+### Red Flags to Note
+- Unrealistic combinations: "5 years experience" + "executive leadership"
+- Kitchen sink requirements: 20+ must-have skills
+- Vague outcomes: "make things better" without specifics
+
+## EXAMPLES
+
+Example 1 - Senior PM Role:
+Job: "Senior Product Manager for our payments platform. 5+ years PM experience. Built payment products at scale. Work with engineering, design, data."
+
+Analysis:
+{
+  "experience_level": "Senior IC",
+  "sub_function": "product",
+  "work_style": "builder_operator",
+  "company_background_fit": ["fintech", "payments companies", "B2B SaaS with payments"],
+  "must_have_done_before": ["Shipped payment products", "Worked with transaction processing"]
+}
+
+Example 2 - VP Leadership Role:
+Job: "VP of Sales to build enterprise sales team from 0 to 20 reps. 10+ years sales experience, 5+ years managing managers. $50M+ quota carried."
+
+Analysis:
+{
+  "experience_level": "VP",
+  "leadership_requirements": {
+    "must_have_managed": true,
+    "leadership_style_needed": "strategic",
+    "team_building_required": true
+  },
+  "trajectory_fit": "CLIMBING",
+  "must_have_done_before": ["Built sales team from scratch", "Managed managers", "Enterprise B2B sales"]
+}
+
+Example 3 - Technical IC Role:
+Job: "Staff Engineer for infrastructure. 10+ years backend. Built distributed systems at scale. Mentor junior engineers but not a manager role."
+
+Analysis:
+{
+  "experience_level": "Senior IC",
+  "work_style": "builder_operator",
+  "leadership_requirements": {
+    "must_have_managed": false,
+    "leadership_style_needed": "hands_on",
+    "team_building_required": false
+  }
+}
+
+## IMPORTANT RULES
+1. Extract both explicit and implicit requirements
+2. Identify must-haves vs. nice-to-haves carefully
+3. Company names: extract clean name without descriptions
+4. Salary: extract both min and max if range given
+5. Be specific about success criteria - avoid vague terms
+6. Identify non-obvious alternative backgrounds
+7. Note any red flags or unrealistic combinations
+8. Mark fields as null if truly unclear (don't guess wildly)
+
+Now analyze the provided job posting and return the enriched JSON profile.
+`;
