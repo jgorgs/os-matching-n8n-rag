@@ -1,0 +1,183 @@
+{
+  "basic_info": {
+    "job_title": "Head of Product, Payroll",
+    "company_name": "Gusto",
+    "location": "Remote (Greater Seattle Area)",
+    "employment_type": "Full-time",
+    "salary_range": {
+      "min": 206000,
+      "max": 292000,
+      "currency": "USD"
+    }
+  },
+  
+  "role_requirements": {
+    "experience_level": "VP",
+    "min_years_experience": 15,
+    "sub_function": "product",
+    "primary_function": "R&D",
+    
+    "required_skills": [
+      "Product strategy and vision",
+      "Team leadership (5+ PMs)",
+      "Cross-functional collaboration",
+      "Product roadmap ownership",
+      "Building and scaling large products"
+    ],
+    
+    "preferred_skills": [
+      "SMB software experience",
+      "Regulated industry experience",
+      "Compliance product experience",
+      "Multi-year initiative planning"
+    ],
+    
+    "required_experience": [
+      "15+ years product management across all levels",
+      "5+ years managing product managers",
+      "Experience with mission-critical products",
+      "Experience in complex, regulated categories"
+    ],
+    
+    "technical_requirements": [],
+    "domain_requirements": [
+      "Payroll domain knowledge",
+      "Small business software",
+      "Compliance and regulations",
+      "Financial services or HR tech"
+    ]
+  },
+  
+  "company_context": {
+    "company_stage": "Late Stage",
+    "company_size": "2,700+ employees",
+    "company_description": "Payroll, HR, benefits platform serving 400,000+ small businesses",
+    "annual_revenue": "$500M+",
+    "funding_status": "Late stage, well-funded",
+    "industries": ["HR Tech", "Payroll", "Small Business Software", "FinTech"]
+  },
+  
+  "role_context": {
+    "reports_to": "Likely CPO or CEO (product leadership team member)",
+    "team_size_managed": 5,
+    "cross_functional_scope": [
+      "Engineering",
+      "Design",
+      "Data Science",
+      "Operations",
+      "Compliance",
+      "Finance",
+      "Go-to-Market"
+    ],
+    "business_impact": "Owns Gusto's core Payroll product used by 400K+ customers, contributing significantly to ARR. End-to-end ownership of product strategy, roadmap, and business performance.",
+    "key_challenges": [
+      "Scale payroll infrastructure for 400K+ businesses globally",
+      "Navigate complex compliance and regulatory requirements",
+      "Balance innovation with reliability for mission-critical product",
+      "Lead cross-functional organization across multiple departments",
+      "Set industry benchmarks while maintaining customer obsession"
+    ],
+    "first_90_days": [
+      "Take ownership of Payroll product and business area",
+      "Define long-term vision and strategy for Gusto Payroll",
+      "Build relationships with cross-functional leaders",
+      "Assess team capabilities and gaps",
+      "Identify quick wins while charting multi-year roadmap"
+    ]
+  },
+  
+  "work_mode_analysis": {
+    "work_style": "strategic_leader",
+    "work_style_evidence": [
+      "Define and drive long-term vision",
+      "Chart future of how small businesses will pay teams",
+      "Directly coach and lead senior PMs",
+      "Work with strong cross-functional teams"
+    ],
+    "ownership_level": "high",
+    "collaboration_intensity": "high"
+  },
+  
+  "ideal_candidate_profile": {
+    "trajectory_fit": "CLIMBING",
+    "trajectory_reasoning": "Looking for someone ready to step into Head of Product role with significant scope and impact. Likely Director/Sr Director of Product looking to step up to VP/Head level.",
+    
+    "company_background_fit": [
+      "Late-stage startups or growth companies",
+      "B2B SaaS with complex products",
+      "HR tech, payroll, or financial services companies",
+      "Mission-driven companies serving SMBs"
+    ],
+    
+    "stage_comfort_required": "growth_stage",
+    
+    "leadership_requirements": {
+      "must_have_managed": true,
+      "leadership_style_needed": "strategic",
+      "team_building_required": true
+    }
+  },
+  
+  "success_profile": {
+    "what_success_looks_like": "Position Payroll for next era of growth and scale. Build dynamic team, thriving business, and products customers love that set industry benchmarks. Drive adoption, revenue outcomes, and customer success across 400K+ businesses.",
+    
+    "key_outcomes_6_months": [
+      "Clear long-term vision and strategy defined",
+      "Team structure optimized and key gaps filled",
+      "Strong relationships with cross-functional leaders established",
+      "Quick wins shipped that improve customer experience"
+    ],
+    
+    "key_outcomes_12_months": [
+      "Multi-year roadmap driving meaningful business outcomes",
+      "Team of empowered senior PMs delivering consistently",
+      "Payroll product positioned as industry leader",
+      "Measurable impact on revenue, adoption, and customer satisfaction"
+    ],
+    
+    "must_have_done_before": [
+      "Led product teams of 5+ senior PMs",
+      "Owned large, mission-critical products at scale",
+      "Worked in regulated or complex product categories",
+      "Collaborated across Engineering, Design, Data, Ops, Compliance, Finance, GTM",
+      "Broken down multi-year initiatives into pragmatic launches"
+    ]
+  },
+  
+  "alternative_backgrounds": {
+    "non_obvious_fits": [
+      "Director of Product from larger HR tech companies (ADP, Paychex, Workday) ready to step up at growth company - brings deep domain expertise",
+      "VP Product from adjacent fintech (payments, accounting software) - understands regulated products and SMB customers",
+      "Head of Product from smaller payroll startups (Rippling, Justworks) - has built similar products, ready for more scale",
+      "Senior PM from Gusto who's been high performer - knows the business deeply, ready for bigger scope"
+    ],
+    
+    "adjacent_roles": [
+      "Director of Product, Payroll",
+      "VP Product, HR Tech",
+      "Head of Product, FinTech",
+      "Senior Director, Product Management"
+    ],
+    
+    "transferable_from": [
+      "Payroll and HR tech (Rippling, Zenefits, BambooHR)",
+      "Small business software (Square, Shopify, QuickBooks)",
+      "Regulated fintech (Stripe, Plaid, banking software)",
+      "Enterprise software with compliance requirements"
+    ]
+  },
+  
+  "filters_and_dealbreakers": {
+    "location_constraints": "Remote, but preference for Greater Seattle Area, San Francisco, Denver, or New York for office access",
+    "work_arrangement": "hybrid",
+    "visa_sponsorship": null,
+    "must_have_regulatory_experience": true,
+    "must_have_specific_company": null,
+    "dealbreakers": [
+      "Less than 15 years product management experience",
+      "Never managed product managers (especially teams of 5+)",
+      "No experience with mission-critical, large-scale products",
+      "Never worked in regulated or complex categories"
+    ]
+  }
+}
