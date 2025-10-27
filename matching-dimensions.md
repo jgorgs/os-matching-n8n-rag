@@ -4,6 +4,11 @@
 4. FUNCTIONAL BREADTH (10%): Do they have the right skill mix?
 5. TRAJECTORY (5%): Are they ready and willing to make the move?
 
+SIMPLIFIED IF NEEDED: 
+1. DOMAIN FIT (40%): Have they done THIS TYPE of work?
+2. CONTEXT FIT (40%): Do they understand THIS WORLD?
+3. SCALE FIT (20%): Can they handle THIS SCOPE?
+
 
 If 3+ of these are "yes," it's worth a conversation.
 
