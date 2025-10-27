@@ -6,14 +6,19 @@
 
 SIMPLIFIED IF NEEDED: 
 1. DOMAIN FIT (40%): Have they done THIS TYPE of work?
-2. CONTEXT FIT (40%): Do they understand THIS WORLD?
-3. SCALE FIT (20%): Can they handle THIS SCOPE?
+   [] what they've acheived/built
+   [] what problems they've solved & outcomes generated
+   [] what tools/systems they've used
+3. CUSTOMER/CONTEXT FIT (40%): Do they understand THIS WORLD?
+   [] similar customer segments
+   [] similar buyer behaviors
+   [] similar company stages
+5. SCALE FIT (20%): Can they handle THIS SCOPE?
+   [] relative scope - are #s in the same order of magnitude?
+   [] is level of complexity similar?
+   [] is responsibility level similar?
 
-
-If 3+ of these are "yes," it's worth a conversation.
-
-
-What This Means for OutScout
+What this could look like for OutScout
 
 ✅ Good Matches Look Like:
 
